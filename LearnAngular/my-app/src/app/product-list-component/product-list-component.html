@@ -1,0 +1,21 @@
+<p>product-list-component works!</p>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (product of products; track product.id) {
+      <tr [class.gach-do]="product.price < 0">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td><img [src]="product.image_link" height="100" width="100"></td>
+      </tr>
+    }
+  </tbody>
+</table>

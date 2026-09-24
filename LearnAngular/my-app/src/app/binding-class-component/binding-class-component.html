@@ -1,0 +1,17 @@
+<p>binding-class-component works!</p>
+
+<div [ngClass]="{'mau_do': true, 'nen_xanh': true}">
+  Welcome to K24411E
+</div>
+
+<!-- Đã sửa [class.btn-saved] và {{ ... }} -->
+<button class="btn"
+        [class.btn-saved]="isSaved"
+        (click)="toggleSaveState()">
+  {{ isSaved ? 'Saved' : 'Re-Save' }}
+</button>
+
+<button [ngClass]="{'btn': true, 'btn-active': isActive, 'btn-saved': isSaved}"
+        (click)="toggleSaveState()">
+  Re-Save
+</button>

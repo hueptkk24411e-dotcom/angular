@@ -1,0 +1,13 @@
+<p>binding-style-component works!</p>
+
+<div class="progress-bar-container">
+  <div
+    class="progress-bar"
+    [style.width.%]="progressValue"
+    [style.backgroundColor]="getStatusColor()">
+  </div>
+</div>
+
+<p [style.color]="getStatusColor()">
+  System status: {{ getStatus() }}
+</p>

@@ -1,0 +1,30 @@
+<p>binding-two-way-component works!</p>
+<table border="1">
+    <tr>
+        <td colspan="2">Phương trình bậc 2</td>
+    </tr>
+    <tr>
+        <td>Hệ số a</td>
+        <td><input type="number" [(ngModel)]="hsa"></td>
+    </tr>
+    <tr>
+        <td>Hệ số b</td>
+        <td><input type="number" [(ngModel)]="hsb"></td>
+    </tr>
+    <!-- Đảm bảo input thứ 3 có đặt tên thẻ là #hsc -->
+<tr>
+  <td>Hệ số c:</td>
+  <td><input type="number"[(ngModel)]="hsc"></td> 
+</tr>
+    <tr>
+        <td>Kết quả</td>
+        <td [innerHTML]="result"></td>
+    </tr>
+     <tr>
+        <td colspan="2">
+           <!-- Dùng [(ngModel)] thì chỉ cần gọi hàm không tham số -->
+<button (click)="doSolution()">Giải phương trình</button>
+            <button>PT Mới</button>
+        </td>
+    </tr>
+</table>

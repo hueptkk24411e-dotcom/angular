@@ -1,0 +1,21 @@
+<p>service-product-image-event-detail.component works!</p>
+<button (click)="goBack()">Go Back</button>
+<table border="1">
+  <tr>
+    <td>ID:</td>
+    <td>{{ selectedProduct?.id }}</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>{{ selectedProduct?.name }}</td>
+  </tr>
+  <tr>
+    <td>Price:</td>
+    <td>{{ selectedProduct?.price }}</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img [src]="selectedProduct?.image_link" alt="{{ selectedProduct?.name }}" height="100" width="100" />
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Cuối Tuần Lớp 1 - Tuần 1</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Khung trang sách A4 */
+        .page {
+            width: 450px;
+            min-height: 630px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header thông tin */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .student-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #444;
+            line-height: 1.8;
+        }
+        .dots { border-bottom: 2px dotted #aaa; display: inline-block; width: 100px; }
+        
+        .badge-box {
+            text-align: center;
+            background-color: #fde8e8;
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px dashed #f87171;
+        }
+        .badge-title { font-size: 13px; font-weight: bold; color: #b91c1c; }
+        .badge-sub { font-size: 11px; color: #ef4444; }
+
+        /* Tiêu đề chính */
+        .main-title {
+            text-align: center;
+            color: #0284c7;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Yêu cầu bài tập */
+        .task-title {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .task-title span { color: #dc2626; font-weight: bold; }
+
+        /* Lưới chứa hình ảnh/thẻ */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Thẻ hình ảnh (Card) */
+        .card {
+            border: 2px solid #86efac;
+            background-color: #f0fdf4;
+            border-radius: 8px;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 0px #4ade80;
+        }
+        .card-icon { font-size: 40px; }
+        .card-text { font-size: 20px; font-weight: bold; color: #2563eb; margin-top: 5px; }
+
+        /* Icon dấu thanh ở giữa */
+        .center-mark {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .mark-box {
+            display: inline-block;
+            background: #facc15;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 4px 16px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Số trang */
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f87171;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TRANG 1: ĐỌC -->
+    <div class="page">
+        <div class="header">
+            <div class="student-info">
+                Tên: <span class="dots"></span><br>
+                Lớp: <span class="dots"></span>
+            </div>
+            <div class="badge-box">
+                <div class="badge-title">TUẦN 1 - ĐỀ 1</div>
+                <div class="badge-sub">Phần: ĐỌC</div>
+            </div>
+        </div>
+
+        <h1 class="main-title">Bài Tập Cuối Tuần Lớp 1</h1>
+
+        <div class="task-title"><span>Bài 1:</span> Đọc chữ cái và dấu thanh sau:</div>
+        <div class="grid-3">
+            <div class="card"><span class="card-text" style="color: #f43f5e;">a</span></div>
+            <div class="card"><span class="card-text" style="color: #0284c7;">\`</span></div>
+            <div class="card"><span class="card-text" style="color: #f43f5e;">b</span></div>
+        </div>
+
+        <div class="task-title"><span>Bài 2:</span> Đánh vần và đọc thành tiếng:</div>
+        <div class="grid-2">
+            <div class="card" style="height: 120px;">
+                <span class="card-icon">👨‍👦</span>
+                <span class="card-text">ba</span>
+            </div>
+            <div class="card" style="height: 120px;">
+                <span class="card-icon">👵</span>
+                <span class="card-text" style="color: #0284c7;">bà</span>
+            </div>
+        </div>
+
+        <div class="page-number">4</div>
+    </div>
+
+    <!-- TRANG 2: BÀI TẬP -->
+    <div class="page">
+        <div class="header">
+            <div class="student-info">
+                Tên: <span class="dots"></span><br>
+                Lớp: <span class="dots"></span>
+            </div>
+            <div class="badge-box">
+                <div class="badge-title">TUẦN 1 - ĐỀ 1</div>
+                <div class="badge-sub">Phần: BÀI TẬP</div>
+            </div>
+        </div>
+
+        <h1 class="main-title">Bài Tập Cuối Tuần Lớp 1</h1>
+
+        <div class="task-title"><span>Bài 3:</span> Nối <b>dấu huyền</b> với hình chứa tiếng có thanh huyền.</div>
+        
+        <!-- Hàng hình trên -->
+        <div class="grid-3">
+            <div class="card"><span class="card-icon">🍇</span></div>
+            <div class="card"><span class="card-icon">🦩</span></div>
+            <div class="card"><span class="card-icon">🐓</span></div>
+        </div>
+
+        <!-- Dấu huyền ở giữa -->
+        <div class="center-mark">
+            <div class="mark-box">\</div>
+        </div>
+
+        <!-- Hàng hình dưới -->
+        <div class="grid-2" style="margin-top: 10px;">
+            <div class="card"><span class="card-icon">🧋</span></div>
+            <div class="card"><span class="card-icon">👶</span></div>
+        </div>
+
+        <div class="page-number">3</div>
+    </div>
+
+</body>
+</html>
