@@ -12,6 +12,8 @@ import { ProductListCallHttpServiceComponent } from './product-list-call-http-se
 import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-error-service-component/product-http-handle-error-service-component';
 import { ServiceProductImageEventComponent } from './service-product-image-event.component/service-product-image-event.component';
 import { ServiceProductImageEventDetailComponent } from './service-product-image-event-detail.component/service-product-image-event-detail.component';
+import { CatalogComponent } from './catalog-component/catalog-component';
+
 
 const routes: Routes = [
 { path:'binding-property', component: BindingPropertyComponent},
@@ -27,6 +29,7 @@ const routes: Routes = [
 { path: 'product-http-handle-error-service',component: ProductHttpHandleErrorServiceComponent },
 {path:'service-product-image-event', component:ServiceProductImageEventComponent}, 
 {path:'service-product-image-event/:id', component:ServiceProductImageEventDetailComponent},
+{path:'catalog', component:CatalogComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
